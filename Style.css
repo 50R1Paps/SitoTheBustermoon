@@ -1,26 +1,15 @@
 html body {
-  position: relative;
-  background: #ece9e6 /* fallback for old browsers */;
-  background: -webkit-linear-gradient(to right, #fff, #ece9e6) /* Chrome 10-25, Safari 5.1-6 */;
-  background: linear-gradient(to right, #fff, #ece9e6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  background: #ece9e6;
   font-family: 'Montserrat', sans-serif;
-  height: 40vh;
-  display: flex;
   align-items: center;
   justify-content: center;
-}
-html body .header {
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #383838;
 }
 html body .menu {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 4%;
 }
 html body .menu .menu-item {
   position: relative;
@@ -35,7 +24,6 @@ html body .menu .menu-item .wee {
   bottom: 0;
   margin-left: 49%;
   transition: 0.75s;
-  /*transform: rotate(90deg);*/
 }
 html body .menu .menu-item h6 {
   margin: 0;
@@ -51,10 +39,10 @@ html body .menu .current-menu-item h6 {
   color: #383838;
 }
 .me {
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
 }
 .me a {
   display: inline-block;
@@ -66,4 +54,34 @@ html body .menu .current-menu-item h6 {
 }
 .me a:hover {
   color: #383838;
+}
+.centro{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.col50 {
+  float: left;
+  width: 50%;
+}
+.col20 {
+  float: left;
+  width: 20%;
+}
+.col60 {
+  float: left;
+  width: 60%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.testo{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align: justify;
+  margin-left: 6%;
+  margin-right: 6%;
 }
