@@ -14,7 +14,7 @@ html body .header {
   top: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  color: #002b75;
+  color: #383838;
 }
 html body .menu {
   width: 100%;
@@ -27,26 +27,28 @@ html body .menu .menu-item {
   cursor: pointer;
 }
 html body .menu .menu-item .wee {
-  height: 2px;
-  width: 100%;
-  background-color: #002b75;
+  height: 60px;
+  width: 3px !important;
+  background-color: #ce000099;
   position: absolute;
   left: 0;
   bottom: 0;
+  margin-left: 49%;
   transition: 0.75s;
+  /*transform: rotate(90deg);*/
 }
 html body .menu .menu-item h6 {
   margin: 0;
   padding: 0 1rem 1.5rem;
   font-size: 1rem;
-  color: #232323;
+  color: #383838;
   transition: 0.75s;
 }
 html body .menu .menu-item:hover h6 {
-  color: #002b75;
+  color: #383838;
 }
 html body .menu .current-menu-item h6 {
-  color: #002b75;
+  color: #383838;
 }
 .me {
   position: absolute;
@@ -58,10 +60,10 @@ html body .menu .current-menu-item h6 {
   display: inline-block;
   padding: 0.25rem;
   margin: 0 0.25rem;
-  color: #232323;
+  color: #383838;
   font-size: 1.5rem;
   transition: 0.75s;
 }
 .me a:hover {
-  color: #002b75;
+  color: #383838;
 }
