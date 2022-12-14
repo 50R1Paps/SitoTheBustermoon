@@ -44,7 +44,7 @@ $(document).ready(function() {
     });
 
   
-
+/*
 // Add a function that is executed on the 'scroll' event
     $(window).on('scroll', function() {
       if (clickEventExecuted) {
@@ -68,7 +68,7 @@ $(document).ready(function() {
         $('.wee').css({ 'left': originalLeft, 'width': originalWidth });
       }
     });
-
+*/
 
 
     $('.menu-item').hover(function() {

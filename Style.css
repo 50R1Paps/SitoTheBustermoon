@@ -96,3 +96,6 @@ html body .menu .current-menu-item h6 {
   z-index: 1;
   background-color: #ece9e6;
 }
+img{
+  border-radius: 4%;
+}
