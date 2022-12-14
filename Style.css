@@ -94,4 +94,5 @@ html body .menu .current-menu-item h6 {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #ece9e6;
 }

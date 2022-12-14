@@ -38,6 +38,8 @@ $(document).ready(function() {
       $('.wee').css({ 'left': $left , 'width': $width });
       $('.current-menu-item').removeClass('current-menu-item');
       $(this).addClass('current-menu-item');
+      var snd = new Audio("sound1.wav"); // buffers automatically when created
+      snd.play();
       //clickEventExecuted = false
     });
 
