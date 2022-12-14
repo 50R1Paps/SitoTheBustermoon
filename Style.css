@@ -1,9 +1,15 @@
 html body {
-  background: #ece9e6;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'La Belle Aurore', sans-serif;
   align-items: center;
   justify-content: center;
+  /*
+  background-color: #3d0e00c1;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  */
+  background-image: url("cartoncino.jpg");
+  color: rgb(38, 38, 38);
 }
+
 html body .menu {
   width: 100%;
   display: flex;
@@ -34,14 +40,14 @@ html body .menu .menu-item h6 {
   margin: 0;
   padding: 0 1rem 1.5rem;
   font-size: 1rem;
-  color: #383838;
+  color: rgb(38, 38, 38);
   transition: 0.75s;
 }
 html body .menu .menu-item:hover h6 {
-  color: #383838;
+  color: rgb(38, 38, 38);
 }
 html body .menu .current-menu-item h6 {
-  color: #383838;
+  color: rgb(38, 38, 38);
 }
 .me {
   align-items: center;
@@ -53,7 +59,7 @@ html body .menu .current-menu-item h6 {
   display: inline-block;
   padding: 0.25rem;
   margin: 0 0.25rem;
-  color: #383838;
+  color: rgb(38, 38, 38);
   font-size: 1.5rem;
   transition: 0.75s;
 }
@@ -65,17 +71,29 @@ html body .menu .current-menu-item h6 {
   justify-content: center;
   text-align: center;
 }
-.col50 {
+.col70 {
   float: left;
-  width: 50%;
-}
-.col20 {
-  float: left;
-  width: 20%;
+  width: 70%;
 }
 .col60 {
   float: left;
   width: 60%;
+}
+.col50 {
+  float: left;
+  width: 50%;
+}
+.col40 {
+  float: left;
+  width: 40%;
+}
+.col30 {
+  float: left;
+  width: 40%;
+}
+.col20 {
+  float: left;
+  width: 20%;
 }
 .row:after {
   content: "";
@@ -94,7 +112,7 @@ html body .menu .current-menu-item h6 {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #ece9e6;
+  backdrop-filter: blur(1px);
 }
 img{
   border-radius: 4%;
