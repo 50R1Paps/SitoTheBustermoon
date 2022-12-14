@@ -15,6 +15,11 @@ html body .menu .menu-item {
   position: relative;
   cursor: pointer;
 }
+.menu-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 html body .menu .menu-item .wee {
   height: 60px;
   width: 3px !important;
