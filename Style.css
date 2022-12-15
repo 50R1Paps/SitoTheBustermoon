@@ -107,6 +107,10 @@ html body .menu .current-menu-item h6 {
   text-align: justify;
   margin-left: 6%;
   margin-right: 6%;
+  line-height: 180%;
+}
+.titolo{
+  font-size: xx-large;
 }
 .menu-sticky {
   position: sticky;
