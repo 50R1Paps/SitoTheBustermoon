@@ -2,10 +2,10 @@ html body {
   font-family: 'La Belle Aurore', sans-serif;
   align-items: center;
   justify-content: center;
-  /*
+/*
   background-color: #3d0e00c1;
   background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
-  */
+*/
   background-image: url("cartoncino.jpg");
   color: rgb(38, 38, 38);
 }
@@ -15,7 +15,9 @@ html body .menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4%;
+  border: 2px solid rgb(38, 38, 38);
+  background-image: url("TuningDial.png");
+  border-radius: 2px;
 }
 html body .menu .menu-item {
   position: relative;
@@ -39,12 +41,12 @@ html body .menu .menu-item .wee {
 html body .menu .menu-item h6 {
   margin: 0;
   padding: 0 1rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgb(38, 38, 38);
   transition: 0.75s;
 }
 html body .menu .menu-item:hover h6 {
-  color: rgb(38, 38, 38);
+  color: #ce0000cb;
 }
 html body .menu .current-menu-item h6 {
   color: rgb(38, 38, 38);
@@ -53,7 +55,7 @@ html body .menu .current-menu-item h6 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 .me a {
   display: inline-block;
@@ -71,6 +73,10 @@ html body .menu .current-menu-item h6 {
   justify-content: center;
   text-align: center;
 }
+.col80 {
+  float: left;
+  width: 80%;
+}
 .col70 {
   float: left;
   width: 70%;
@@ -87,13 +93,25 @@ html body .menu .current-menu-item h6 {
   float: left;
   width: 40%;
 }
+.col35 {
+  float: left;
+  width: 34.5%;
+}
 .col30 {
   float: left;
-  width: 40%;
+  width: 30%;
+}
+.col25 {
+  float: left;
+  width: 25%;
 }
 .col20 {
   float: left;
   width: 20%;
+}
+.col15 {
+  float: left;
+  width: 15%;
 }
 .row:after {
   content: "";
