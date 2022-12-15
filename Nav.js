@@ -77,6 +77,10 @@ $(document).ready(function() {
       $('.wee').css({ 'left': $left , 'width': $width });
     }, function() {
       $('.wee').css({ 'left': $left , 'width': $width });
+      /*
+      var snd = new Audio("sound3.wav");
+      snd.play();
+      */
     });
 
     
