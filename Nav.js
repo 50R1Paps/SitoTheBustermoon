@@ -5,9 +5,11 @@ $(document).ready(function () {
     var $left = $(".current-menu-item").offset().left - $thisnav;
     var $width = $(".current-menu-item").outerWidth();
 
-    // Store the original left and width of the element
-    var originalLeft = $(".current-menu-item").offset().left;
-    var originalWidth = $(".current-menu-item").outerWidth();
+    // Store in a variable named pagelength the length of the page
+    var pagelength = $(document).height();
+    // Store in a variable named navbarwidth the width of the menu
+    var navbarwidth = $(".menu").width() * 0.75;
+    var step = pagelength / navbarwidth;
 
     var clickEventExecuted = false;
 
@@ -23,7 +25,7 @@ $(document).ready(function () {
       snd.play();
       setTimeout(function () {
         clickEventExecuted = false;
-      }, 1200);
+      }, 1500);
     });
 
     // Add a function that is executed on the 'scroll' event
@@ -34,20 +36,8 @@ $(document).ready(function () {
       // Get the current vertical scroll position of the page
       var scrollPos = $(window).scrollTop();
 
-      // If the user has scrolled down
-      if (scrollPos > 0) {
-        // Get the current left and width of the element
-        var $left = $(".current-menu-item").offset().left;
-        var $width = $(".current-menu-item").outerWidth();
-
-        // Use the .css() method to set the left and width of the element
-        $(".wee").css({ left: $left, width: $width });
-      }
-      // If the user has scrolled up
-      else {
-        // Use the original left and width of the element
-        $(".wee").css({ left: originalLeft, width: originalWidth });
-      }
+      var positionline = scrollPos / step;
+      $(".wee").css({ left: positionline, width: $width });
     });
 
     $(".menu-item").hover(
