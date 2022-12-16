@@ -8,7 +8,7 @@ $(document).ready(function () {
     // Store in a variable named pagelength the length of the page
     var pagelength = $(document).height();
     // Store in a variable named navbarwidth the width of the menu
-    var navbarwidth = $(".menu").width() * 0.75;
+    var navbarwidth = $(".menu").width() * 1.17;
     var step = pagelength / navbarwidth;
 
     var clickEventExecuted = false;
