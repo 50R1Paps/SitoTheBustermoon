@@ -64,6 +64,7 @@ html body .menu .current-menu-item h6 {
   color: rgb(38, 38, 38);
   font-size: 1.5rem;
   transition: 0.75s;
+  padding-top: 40px;
 }
 .me a:hover {
   color: #383838;
@@ -117,6 +118,9 @@ html body .menu .current-menu-item h6 {
   content: "";
   display: table;
   clear: both;
+}
+.monolitic{
+  height: 20cm;
 }
 .testo{
   align-items: center;
