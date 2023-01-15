@@ -21,7 +21,7 @@ $(document).ready(function () {
       $(".wee").css({ left: $left, width: $width });
       $(".current-menu-item").removeClass("current-menu-item");
       $(this).addClass("current-menu-item");
-      var snd = new Audio("sound1.wav"); // buffers automatically when created
+      var snd = new Audio("../Sounds/sound1.wav"); // buffers automatically when created
       snd.play();
       setTimeout(function () {
         clickEventExecuted = false;
@@ -49,7 +49,7 @@ $(document).ready(function () {
       function () {
         $(".wee").css({ left: $left, width: $width });
         /*
-      var snd = new Audio("sound3.wav");
+      var snd = new Audio("../Sounds/sound3.wav");
       snd.play();
       */
       }

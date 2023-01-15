@@ -4,42 +4,39 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="Style.css" rel="stylesheet" />
+    <link href="CSS/Style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="Nav.js"></script>
-    <script src="Scroll.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+    <script src="JS/Nav.js"></script>
+    <script src="JS/Scroll.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
   </head>
 
   <body>
     <!--Navbar start-->
     <div class="row menu-sticky">
       <div class="col25">
-        <div class="icona centro" style="padding-top: 40px">
-          <h1>The Bustermoon</h1>
+        <div class="centro">
+          <img src="../IMG/logo.png" alt="" width="250" style="margin-top: -50px"/>
         </div>
       </div>
 
       <div class="col50" style="margin-top: 1.5%">
         <div class="menu" style="padding-top: 70px">
           <div class="menu-item current-menu-item">
-            <h6 href="#Home" onClick="generateReport(this);">Last Album</h6>
+            <h6 href="#album" onClick="generateReport(this);">Last Album</h6>
             <div class="wee"></div>
           </div>
           <div class="menu-item">
-            <h6 href="#Item1" onClick="generateReport(this);">Video Clips</h6>
+            <h6 href="#band" onClick="generateReport(this);">Band Members</h6>
           </div>
           <div class="menu-item">
-            <h6 href="#Item2" onClick="generateReport(this);">Merch</h6>
+            <h6 href="#clips" onClick="generateReport(this);">Video Clips</h6>
           </div>
           <div class="menu-item">
-            <h6 href="#Item3" onClick="generateReport(this);">Band Members</h6>
+            <h6 href="#merch" onClick="generateReport(this);">Our Merch</h6>
           </div>
           <div class="menu-item">
-            <h6 href="#Item4" onClick="generateReport(this);">Byography</h6>
+            <h6 href="#bio" onClick="generateReport(this);">Byography</h6>
           </div>
         </div>
       </div>
@@ -60,12 +57,41 @@
     <!--Navbar end-->
 
     <!--Body start-->
-    <div class="row monolitic" style="margin-top: 8%">
+    <div class="row monolitic" style="margin-top: 2%">
+      <div class="col50">
+        <h3 id="album" class="testo titolo">Last Album</h3>
+        <p class="testo">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
+          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
+          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
+          In finibus risus a blandit tincidunt. Phasellus varius lobortis
+          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
+          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
+          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
+          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
+          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
+          magna mi in felis. Nullam euismod lectus non libero mollis, sed
+          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
+          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
+          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
+          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
+          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
+          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
+          ullamcorper molestie.
+        </p>
+      </div>
+      <div class="col50 centro">
+        <img src="../IMG/vinile.png" alt="" width="500" style="margin-top: 80px;"/>
+      </div>
+    </div>
+
+    <div class="row monolitic" style="margin-top: 2%">
       <div class="col40 centro">
-        <img src="vinile.png" alt="" width="400" style="margin-top:0;"/>
+        <img src="../IMG/feu.png" alt="" width="400" />
       </div>
       <div class="col60">
-        <h3 id="Home" class="testo titolo">Last Album</h3>
+        <h3 id="band" class="testo titolo">Band Members</h3>
         <p class="testo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
           porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
@@ -90,32 +116,45 @@
     </div>
 
     <div class="monolitic">
-      <div class="row" style="margin-top: 12%">
-        <div class="col40">
-          <h3 id="Item1" class="testo titolo" style="margin: auto; width: 50%;">Video Clips</h3>
-          <p style="margin: auto; width: 50%;">
-            Per me è la cipolla. Guarda i nostri fantastici video clips! Ti innamorerai di Fede Stagno! 
-          </p>
-        </div>
-        <div class="col60 centro">
-          <iframe width="576" height="324" src="https://www.youtube.com/embed/dOoQIOjIAS4" title="The Pier Session 🌊 Big Blue – w/ Simone Dabusti 🎺" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
+      <div class="row" style="margin-top: 2%">
+        <div class="col100">
+          <h3 id="clips" class="testo titolo" >Video Clips</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col60 centro">
-          <iframe width="576" height="324" src="https://www.youtube.com/embed/1YazXxV_ITA" title="The Bustermoon - When Nothing Matters (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
+        <div class="col50 centro">
+          <iframe width="460" height="259" src="https://www.youtube.com/embed/1YazXxV_ITA" title="The Bustermoon - When Nothing Matters (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
         </div>
-        <div class="col40">
-          <p style="margin: auto; width: 50%;">
-            Per me è la cipolla. Guarda i nostri fantastici video clips! Ti innamorerai di Fede Stagno! 
-          </p>
+        <div class="col50 centro">
+          <iframe width="460" height="259" src="https://www.youtube.com/embed/dOoQIOjIAS4" title="The Pier Session 🌊 Big Blue – w/ Simone Dabusti 🎺" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
         </div>
       </div>
     </div>
 
-    <div class="row monolitic" style="margin-top: 1%">
+    <div class="row monolitic" style="margin-top: 2%">
       <div class="col50">
-        <h3 id="Item2" class="testo titolo">Merch</h3>
+        <h3 id="merch" class="testo titolo">Merch</h3>
+        <p class="testo">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
+          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
+          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
+          In finibus risus a blandit tincidunt. Phasellus varius lobortis
+          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
+          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
+          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
+          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
+          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
+          magna mi in felis.
+        </p>
+      </div>
+      <div class="col50 centro">
+        <img src="../IMG/vinile.png" alt="" width="300" />
+      </div>
+    </div>
+
+    <div class="row monolitic" style="margin-top: 2%">
+      <div class="col50">
+        <h3 id="bio" class="testo titolo">Byography</h3>
         <p class="testo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
           porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
@@ -138,73 +177,17 @@
         </p>
       </div>
       <div class="col50 centro">
-        <img src="vinile.png" alt="" width="300" />
-      </div>
-    </div>
-
-    <div class="row monolitic" style="margin-top: 1%">
-      <div class="col60">
-        <h3 id="Item3" class="testo titolo">Band Members</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis. Nullam euismod lectus non libero mollis, sed
-          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
-          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
-          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
-          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
-          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
-          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
-          ullamcorper molestie.
-        </p>
-      </div>
-      <div class="col40 centro">
-        <img src="feu.png" alt="" width="400" />
-      </div>
-    </div>
-
-    <div class="row monolitic" style="margin-top: 1%">
-      <div class="col50">
-        <h3 id="Item4" class="testo titolo">Byography</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis. Nullam euismod lectus non libero mollis, sed
-          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
-          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
-          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
-          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
-          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
-          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
-          ullamcorper molestie.
-        </p>
-      </div>
-      <div class="col50 centro">
-        <img src="vinile.png" alt="" width="300" />
+        <img src="../IMG/vinile.png" alt="" width="300" />
       </div>
     </div>
     <!--Body end-->
     <!--Footer start-->
-    <div class="row monolitic" style="margin-top: 2%">
-      <div class="col50"></div>
-      <div class="col50 centro"></div>
+    <!--
+    <div class="row monolitic" style="margin-top: 0%">
+      <div class="col0"></div>
+      <div class="col0 centro"></div>
     </div>
+    -->
     <!--Footer end-->
   </body>
 </html>
