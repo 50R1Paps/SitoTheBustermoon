@@ -1,193 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="CSS/Style.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="JS/Nav.js"></script>
-    <script src="JS/Scroll.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Bustermoon</title>
+
+    <link href="bootstrap_5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap_5.0.2/js/bootstrap.min.js" ></script>
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      @font-face {
+        font-family: 'MyCustomFont';
+        src: url('Hydrant.otf') format('opentype');
+      }
+      body {
+        font-family: 'MyCustomFont', sans-serif;
+        text-align: justify;
+      }
+    </style>
   </head>
-
-  <body>
-    <!--Navbar start-->
-    <div class="row menu-sticky">
-      <div class="col25">
-        <div class="centro">
-          <img src="../IMG/logo.png" alt="" width="250" style="margin-top: -50px"/>
-        </div>
-      </div>
-
-      <div class="col50" style="margin-top: 1.5%">
-        <div class="menu" style="padding-top: 70px">
-          <div class="menu-item current-menu-item">
-            <h6 href="#album" onClick="generateReport(this);">Last Album</h6>
-            <div class="wee"></div>
-          </div>
-          <div class="menu-item">
-            <h6 href="#band" onClick="generateReport(this);">Band Members</h6>
-          </div>
-          <div class="menu-item">
-            <h6 href="#clips" onClick="generateReport(this);">Video Clips</h6>
-          </div>
-          <div class="menu-item">
-            <h6 href="#merch" onClick="generateReport(this);">Our Merch</h6>
-          </div>
-          <div class="menu-item">
-            <h6 href="#bio" onClick="generateReport(this);">Byography</h6>
-          </div>
-        </div>
-      </div>
-      <!--Social-->
-      <div class="col25">
-        <div class="me centro">
-          <a
-            href="https://www.instagram.com/thebustermoon/?hl=it"
-            target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="" target="_blank"><i class="bi bi-shop-window"></i></a>
-          <a href="" target="_blank"><i class="bi bi-disc"></i></a>
-        </div>
+  
+<body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid" style="margin-left: 60px">
+      <a class="navbar-brand" href="#"><img src="img/Logo nuovo.png" alt="" width="140"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" style="margin-left: 60px">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Last Album</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videoclips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Merch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About Us</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!--Navbar end-->
+  </nav>
+</header>
 
-    <!--Body start-->
-    <div class="row monolitic" style="margin-top: 2%">
-      <div class="col50">
-        <h3 id="album" class="testo titolo">Last Album</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis. Nullam euismod lectus non libero mollis, sed
-          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
-          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
-          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
-          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
-          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
-          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
-          ullamcorper molestie.
-        </p>
+<main>
+
+  <img src="img/foto1.JPG" alt="Responsive image" style="width:100%; margin-top: 70px;">
+  <!-- Three columns of text below the carousel -->
+
+  </div><!-- /.container -->
+
+  <div class="container marketing">
+
+    <!-- START THE FEATURETTES -->
+    <div class="row featurette" style="margin-top: 4%">
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1" style="margin-bottom: 20px">Last Album - The Other Pocket</h2>
+        <img src="img/vinile.png" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto center-content" style="width:60%;">
       </div>
-      <div class="col50 centro">
-        <img src="../IMG/vinile.png" alt="" width="500" style="margin-top: 80px;"/>
+      <div class="col-md-6 center-content">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1Wm2AkaZy1u0fDKy8rpPFK?utm_source=generator" width="100%" height="152" frameBorder="0"   allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <!--<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1Wm2AkaZy1u0fDKy8rpPFK?utm_source=generator&theme=0" width="100%" height="352"   frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
+            <!--<button type="button" class="btn btn-outline-dark">Read the lyrics</button>-->
       </div>
     </div>
-
-    <div class="row monolitic" style="margin-top: 2%">
-      <div class="col40 centro">
-        <img src="../IMG/feu.png" alt="" width="400" />
+    <div class="row featurette">
+      <div class="col-md-6">
       </div>
-      <div class="col60">
-        <h3 id="band" class="testo titolo">Band Members</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis. Nullam euismod lectus non libero mollis, sed
-          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
-          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
-          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
-          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
-          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
-          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
-          ullamcorper molestie.
-        </p>
+      <div class="col-md-6">
+        <div class="d-grid gap-2 col-6 mx-auto" style="margin-top: -80px">
+              <a class="btn btn-outline-dark" href="https://thebustermoon.bandcamp.com/merch/mareena-roots-pack-cd-t-shirt" type="button">Read the lyrics</a>
+            </div>
       </div>
     </div>
+    <hr class="featurette-divider">
 
-    <div class="monolitic">
-      <div class="row" style="margin-top: 2%">
-        <div class="col100">
-          <h3 id="clips" class="testo titolo" >Video Clips</h3>
+    <div class="row featurette" style="margin-top: 2%">
+      <div class="col-md-6">
+        <h2 class="featurette-heading fw-normal lh-1" style="margin-bottom: 20px">She's My Girl Videoclip</h2>
+        <iframe src="https://www.youtube.com/embed/dOoQIOjIAS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="width:80%; border-radius:10px" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6 center-content">
+        <iframe style="width:80%; margin-top: 45px; border-radius:10px" src="https://www.youtube.com/embed/dOoQIOjIAS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+
+
+
+
+    <div class="row featurette" style="margin-top: 2%">
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading fw-normal lh-1" style="margin-bottom: 20px">Merch</h2>
+          </div>
         </div>
-      </div>
+       <div class="row featurette">
+          <div class="col-md-4 center-content">
+            <img src="img/merch.jpeg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="width:80%;" height="200">
+          </div>
+          <div class="col-md-4 center-content">
+            <img src="img/merch.jpeg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="width:80%;" height="200">
+          </div>
+          <div class="col-md-4 center-content">
+            <img src="img/merch.jpeg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="width:80%;" height="200">
+          </div>
+        </div>
+        <div class="row featurette">
+          <div class="col-md-12 center-content" style="margin-top: 20px">
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a class="btn btn-outline-dark" href="https://thebustermoon.bandcamp.com/merch/mareena-roots-pack-cd-t-shirt" type="button">Shop</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" style="margin-top: 2%">
       <div class="row">
-        <div class="col50 centro">
-          <iframe width="460" height="259" src="https://www.youtube.com/embed/1YazXxV_ITA" title="The Bustermoon - When Nothing Matters (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
+      <h2 class="featurette-heading fw-normal lh-1">Bio</h2>
+      <div class="col-lg-3">
+        <div class="text-center">
+            <img src="img/Fede.JPG" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
+            <h2 class="fw-normal">Fede</h2>
         </div>
-        <div class="col50 centro">
-          <iframe width="460" height="259" src="https://www.youtube.com/embed/dOoQIOjIAS4" title="The Pier Session 🌊 Big Blue – w/ Simone Dabusti 🎺" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 2%;"></iframe>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-3">
+        <div class="text-center">
+            <img src="img/Steddu.JPG" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
+            <h2 class="fw-normal">Steddu</h2>
         </div>
-      </div>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-3">
+        <div class="text-center">
+            <img src="img/Fuxio.JPG" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
+            <h2 class="fw-normal">Fuxio</h2>
+        </div>
+      </div><!-- /.col-lg-3 -->
+      <div class="col-lg-3">
+        <div class="text-center">
+            <img src="img/Andre.JPG" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
+            <h2 class="fw-normal">Andre</h2>
+        </div>
+      </div><!-- /.col-lg-3 -->
+      <p style="margin-top: 40px;" >Four years touring around France, Spain and Italy, the debut EP Going To (2018) and the album Mareena Roots gave The Bustermoon the title of “sons of a crazy fusion between the sound of the Zac Brown Band and the attitude of The Beach Boys”. For the new album The Other Pocket, out in Spring 2023, they unleash their folk rock in a new world where they also find ska, ballads and Californian style punk rock. There’s a part of Europe where The Bustermoon have never played yet: 2023 is the year.  </p>
+    </div><!-- /.row -->
+    <hr class="featurette-divider">
     </div>
 
-    <div class="row monolitic" style="margin-top: 2%">
-      <div class="col50">
-        <h3 id="merch" class="testo titolo">Merch</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis.
-        </p>
-      </div>
-      <div class="col50 centro">
-        <img src="../IMG/vinile.png" alt="" width="300" />
-      </div>
-    </div>
+    <!-- /END THE FEATURETTES -->
 
-    <div class="row monolitic" style="margin-top: 2%">
-      <div class="col50">
-        <h3 id="bio" class="testo titolo">Byography</h3>
-        <p class="testo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-          porta erat. Aliquam venenatis nisi nec gravida sollicitudin. Donec
-          commodo vitae lorem non accumsan. Aliquam sagittis varius consequat.
-          In finibus risus a blandit tincidunt. Phasellus varius lobortis
-          fringilla. Nullam bibendum turpis suscipit, malesuada velit non,
-          interdum leo. Ut aliquam sed nibh sed condimentum. Aenean at faucibus
-          felis, in pharetra magna. Nullam sit amet molestie urna. Aenean eget
-          diam posuere, sagittis lectus eget, porttitor mi. Nam facilisis, dolor
-          quis lacinia feugiat, lorem libero lacinia ligula, sit amet euismod
-          magna mi in felis. Nullam euismod lectus non libero mollis, sed
-          aliquet elit ullamcorper. In hac habitasse platea dictumst. Nunc
-          sodales sapien nec odio vestibulum malesuada quis non justo. Sed
-          pellentesque tellus urna, ac scelerisque lorem elementum sit amet.
-          Curabitur scelerisque dictum viverra. Duis quis nunc felis. Ut
-          elementum erat eu urna euismod, at rutrum magna dictum. Donec vel
-          lorem nulla. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Nunc varius ipsum vel
-          ullamcorper molestie.
-        </p>
-      </div>
-      <div class="col50 centro">
-        <img src="../IMG/vinile.png" alt="" width="300" />
-      </div>
-    </div>
-    <!--Body end-->
-    <!--Footer start-->
-    <!--
-    <div class="row monolitic" style="margin-top: 0%">
-      <div class="col0"></div>
-      <div class="col0 centro"></div>
-    </div>
-    -->
-    <!--Footer end-->
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
   </body>
 </html>
